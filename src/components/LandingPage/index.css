@@ -1,50 +1,126 @@
-.container{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
-.top-panel{
-    position: fixed;
-    width: 100%;
-    height: 33%;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.top-panel {
+  position: fixed;
+  width: 100%;
+  height: 33%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cover-screen-img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    object-fit: cover;
+.cover-screen-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
 }
-.cover-screen{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+.cover-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
-.polyGon{
-    position: absolute;
-    top: 70%;
+.polyGon {
+  position: absolute;
+  top: 70%;
 }
-.logo{
-    top:10%;
-    left: 5%;
-    width: 67px;
-    height: 57px;
+.logo {
+  top: 10%;
+  left: 5%;
+  width: 67px;
+  height: 57px;
 }
-.kanavs{
-    position: absolute;
-    top: 32%;
-    width: 144px;
-    height: 144px;
-    z-index: 1;
+.kanavs {
+  position: absolute;
+  top: 32%;
+  width: 144px;
+  height: 144px;
+  z-index: 1;
+}
+
+.bottom-panel {
+  position: fixed;
+  width: 100%;
+  height: 67%;
+  left: 0;
+  bottom: 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-rows: 4fr 3fr 4fr;
+  box-sizing: border-box;
+}
+.intro {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 109%;
+  /* or 20px */
+
+  text-align: center;
+
+  color: #191e31;
+}
+.intro p {
+  padding: 0rem;
+  margin: 0.5rem;
+}
+.foundingInfo {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #bf5184;
+}
+.intro-details {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #000000;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.contact-button {
+  width: 75px;
+  height: 22px;
+  left: 225px;
+  top: 333px;
+
+  background: #bf5184;
+  border: 1px solid #bf5184;
+  border-radius: 2px;
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    width: 80%;
+    margin: 0 10%;
+    box-sizing: border-box;
+    cursor: pointer;
 }
