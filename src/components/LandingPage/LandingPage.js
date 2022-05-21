@@ -29,7 +29,7 @@ export default function LandingPage() {
           </p>
           <div className="contact-row ">
             <div className="contact-button center">Follow</div>
-            <EmailShareButton url={shareUrl} subject={"https://metadome.ai/"} separato=" " body={"https://metadome.ai/"}>
+            <EmailShareButton url={"https://metadome.ai/"} subject={"Metadome"} separato=" " body={"Metadome"}>
               <div className="contact-button center">Email</div>
             </EmailShareButton>
             
