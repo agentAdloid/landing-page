@@ -1,0 +1,7 @@
+.share-icons{
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

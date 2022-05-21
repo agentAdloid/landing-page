@@ -6,7 +6,7 @@
   top: 0;
 }
 .top-panel {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 33%;
   left: 0;
@@ -33,7 +33,9 @@
 }
 .polyGon {
   position: absolute;
-  top: 70%;
+  top: 160px;
+  height: 220px !important;
+  /* object-fit: cover; */
 }
 .logo {
   top: 10%;
@@ -43,26 +45,24 @@
 }
 .kanavs {
   position: absolute;
-  top: 32%;
+  top: 90px;
   width: 144px;
   height: 144px;
   z-index: 1;
 }
 
 .bottom-panel {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 67%;
   left: 0;
   bottom: 0;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   display: grid;
-  grid-template-rows: 4fr 3fr 4fr;
+  grid-template-rows: 7fr 6fr 5fr 2fr;
   box-sizing: border-box;
 }
 .intro {
-  position: absolute;
-  left: 0;
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
@@ -98,7 +98,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .contact-button {
   width: 75px;
@@ -114,13 +113,65 @@
   font-size: 10px;
   line-height: 15px;
 }
-.contact-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 25px;
-    width: 80%;
-    margin: 0 10%;
-    box-sizing: border-box;
-    cursor: pointer;
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 80%;
+  margin: 0 10%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.about p{
+    padding: .1rem 0;
+    margin: .1rem 0;
+}
+.about-header {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #bf5184;
+}
+.about-name {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: left;
+  color: #000000;
+}
+.adderessChilds{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        margin: 0 20%;
+      }
+      .bottom-panel {
+        position: absolute;
+        width: 100%;
+        height: 67%;
+        left: 0;
+        bottom: 0;
+        padding: 0 10%;
+        display: grid;
+        grid-template-rows: 4fr 3fr 4fr;
+        box-sizing: border-box;
+      }
 }
