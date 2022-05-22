@@ -2,7 +2,7 @@
   "name": "my-landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adloid-assets.s3.ap-south-1.amazonaws.com/cards/kanav",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.1.0",
     "react-copy-to-clipboard": "^5.1.0",
