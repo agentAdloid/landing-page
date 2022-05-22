@@ -47,7 +47,7 @@ export default function LandingPage() {
                 }}>
               <div className="contact-button center">Call</div>
             </CopyToClipboard>
-            {!copied ? (
+            {copied ? (
               <div className="copied-alert">
                 Copied to clipboard
               </div>
