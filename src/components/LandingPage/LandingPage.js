@@ -1,16 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import "./index.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import backGroundImage from "../../assets/backGroundImage.svg";
 import polyGon from "../../assets/whitePolygon.svg";
 import Metadome from "../../assets/Metadome.svg";
-import KanavsImage from "../../assets/KanavsImage.svg";
+import KanavsImage from "../../assets/KanavsImage.png";
 import Share from "../Share/Share";
-import {
-  EmailShareButton,
-} from "react-share";
+
 
 export default function LandingPage() {
+  const [copied,setCopied] = useState(0);
   return (
     <div className="container">
       <div className="top-panel">
@@ -28,14 +27,31 @@ export default function LandingPage() {
             to making immersive tech more accessible.
           </p>
           <div className="contact-row ">
-            <div className="contact-button center">Follow</div>
-            <EmailShareButton url={"https://metadome.ai/"} subject={"Metadome"} separato=" " body={"Metadome"}>
+            <a href="https://www.linkedin.com/company/metadome/">
+              <div className="contact-button center" >Follow</div>
+            </a>
+            <CopyToClipboard text={"kanav@metadome.ai"}  onCopy={() => {
+                  setCopied(true);
+                  setTimeout(() => {
+                    setCopied(false);
+                  }, 1000);
+                }}>
               <div className="contact-button center">Email</div>
-            </EmailShareButton>
+            </CopyToClipboard>
             
-            <CopyToClipboard text={919971312806}>
+            <CopyToClipboard text={"919971312806"}  onCopy={() => {
+                  setCopied(true);
+                  setTimeout(() => {
+                    setCopied(false);
+                  }, 1000);
+                }}>
               <div className="contact-button center">Call</div>
             </CopyToClipboard>
+            {!copied ? (
+              <div className="copied-alert">
+                Copied to clipboard
+              </div>
+            ) : null}
           </div>
         </div>
         <div className="about">
